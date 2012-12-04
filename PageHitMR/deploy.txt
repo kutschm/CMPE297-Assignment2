@@ -1,0 +1,68 @@
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/PageHitMR$ vmc push
+/usr/local/lib/ruby/1.9.1/yaml.rb:56:in `<top (required)>':
+It seems your ruby installation is missing psych (for YAML output).
+To eliminate this warning, please install libyaml and reinstall your ruby.
+Name> cmpe297-kutschm-assignment2-HitCouterMR
+
+Instances> 1
+
+1: sinatra
+2: other
+Framework> sinatra
+
+1: ruby18
+2: ruby19
+3: other
+Runtime> 2
+
+1: 64M
+2: 128M
+3: 256M
+4: 512M
+5: 1G
+Memory Limit> 128M
+
+Creating cmpe297-kutschm-assignment2-HitCouterMR... OK
+
+1: cmpe297-kutschm-assignment2-HitCouterMR.cloudfoundry.com
+2: none
+URL> cmpe297-kutschm-assignment2-HitCouterMR.cloudfoundry.com
+
+Updating cmpe297-kutschm-assignment2-HitCouterMR... OK
+
+Create services for application?> y
+
+1: mongodb 2.0
+2: mysql 5.1
+3: postgresql 9.0
+4: rabbitmq 2.4
+5: redis 2.6
+6: redis 2.2
+7: redis 2.4
+What kind?> 1
+
+Name?> mongodb-be2ef
+
+Creating service mongodb-be2ef... OK
+Binding mongodb-be2ef to cmpe297-kutschm-assignment2-HitCouterMR... OK
+Create another service?> n
+
+Bind other services to application?> n
+
+Save configuration?> y
+
+Saving to manifest.yml... OK
+Uploading cmpe297-kutschm-assignment2-HitCouterMR... OK
+Using manifest file manifest.yml
+
+Starting cmpe297-kutschm-assignment2-HitCouterMR... OK
+Checking cmpe297-kutschm-assignment2-HitCouterMR... OK
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/PageHitMR$ vmc apps
+/usr/local/lib/ruby/1.9.1/yaml.rb:56:in `<top (required)>':
+It seems your ruby installation is missing psych (for YAML output).
+To eliminate this warning, please install libyaml and reinstall your ruby.
+Getting applications... OK
+
+name                                      status    usage      runtime   url                                                     
+cmpe297-kutschm-assignment2-HitCouter     running   1 x 128M   ruby19    cmpe297-kutschm-assignment2-hitcouter.cloudfoundry.com  
+cmpe297-kutschm-assignment2-HitCouterMR   running   1 x 128M   ruby19    cmpe297-kutschm-assignment2-hitcoutermr.cloudfoundry.com

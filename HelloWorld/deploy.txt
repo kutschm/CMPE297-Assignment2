@@ -1,0 +1,73 @@
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/HelloWorld$ vmc push
+Name> cmpe297-kutschm-assignment2-HelloWorld
+
+Instances> 1
+
+1: sinatra
+2: other
+Framework> sinatra
+
+1: ruby18
+2: ruby19
+3: other
+Runtime> 2
+
+1: 64M
+2: 128M
+3: 256M
+4: 512M
+5: 1G
+Memory Limit> 128M
+
+Creating cmpe297-kutschm-assignment2-HelloWorld... OK
+
+1: cmpe297-kutschm-assignment2-HelloWorld.cloudfoundry.com
+2: none
+URL> cmpe297-kutschm-assignment2-HelloWorld.cloudfoundry.com
+
+Updating cmpe297-kutschm-assignment2-HelloWorld... OK
+
+Create services for application?> n
+
+Bind other services to application?> n
+
+Save configuration?> n
+
+Uploading cmpe297-kutschm-assignment2-HelloWorld... OK
+Starting cmpe297-kutschm-assignment2-HelloWorld... OK
+Checking cmpe297-kutschm-assignment2-HelloWorld... OK
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/HelloWorld$ vmc apps
+Getting applications... OK
+
+name                                     status    usage      runtime   url                                                    
+cmpe297-kutschm-assignment2-HelloWorld   running   1 x 128M   ruby19    cmpe297-kutschm-assignment2-helloworld.cloudfoundry.com
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/HelloWorld$ vmc scale
+No applications or manifest to operate on.
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/HelloWorld$ vmc scale cmpe297-kutschm-assignment2-HelloWorld
+Instances> 1
+
+1: 64M
+2: 128M
+3: 256M
+4: 512M
+5: 1G
+6: 2G
+Memory Limit> 128M
+
+No changes!
+mkutsch@mkutsch:~/Documents/SJSU/Semester_5/CMPE297/Assi2/HelloWorld$ vmc scale cmpe297-kutschm-assignment2-HelloWorld
+Instances> 2
+
+1: 64M
+2: 128M
+3: 256M
+4: 512M
+5: 1G
+6: 2G
+Memory Limit> 256M
+
+Scaling cmpe297-kutschm-assignment2-HelloWorld... OK
+Stopping cmpe297-kutschm-assignment2-HelloWorld... OK
+
+Starting cmpe297-kutschm-assignment2-HelloWorld... OK
+Checking cmpe297-kutschm-assignment2-HelloWorld... OK
